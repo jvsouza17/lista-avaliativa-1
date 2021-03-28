@@ -1,0 +1,50 @@
+algoritmo media;
+// Síntese
+//  Objetivo:  Leia 2 valores A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a
+// média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma
+// dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0.
+//  Entrada : valor de A e B
+//  Saída   : Média do aluno
+
+
+principal
+	// Declarações
+real A, B, media;
+	// Instruções
+escreva("Valor de A: ");
+leia(A);
+	// A > 10
+se (A > 10) entao
+	escreval("Nota alterada para valor máximo: 10");
+	A = 10;
+	escreva("Insira o valor de B: ");
+senao 
+	escreva("Insira o valor de B: ");
+fimSe 
+	// A < 10
+se (A < 10) entao
+	escreval("Nota alterada para valor mínimo: 0");
+	A = 0;
+	escreva("Insira o valor de B: ");
+senao
+	escreva("Insira o valor de B: ");
+fimSe
+	// B > 10
+se (B > 10) entao
+	escreval("Nota alterada para valor máximo: 10");
+	B = 10;
+senao 
+	escreva("");
+fimSe
+se (B < 10) entao
+	escreval("Nota alterada para valor mínimo: 0");
+	B = 0;
+senao	
+	escreva("");
+fimSe
+	// valor da média
+media = (A*3.5 + B*7.5);
+	// resultado
+escreval("A média é: ");
+leia(media);
+fimPrincipal

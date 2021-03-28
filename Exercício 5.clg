@@ -1,0 +1,23 @@
+algoritmo fiosREFiosA;
+// Síntese
+//  Objetivo: Fazer um algoritmo para auxiliar um construtor a descobrir a quantidade de rolos e a
+// quantidade de metros avulsos de fios que ele precisa adquirir. Sabe-se que o
+// construtor tem a quantidade total de fios em metros a serem utilizados na instalação
+// elétrica da obra e que cada rolo de fio tem 50 metros. 
+//  Entrada : metros necessários
+//  Saída   : quantidade de fios avulsos e rolos
+
+
+principal
+	// Declarações
+inteiro rolos, fiosR, FiosA, metros;
+	// Instruções
+escreva("Metragem da obra: ");
+leia(metros);
+	// quantia de fiosR e fiosA
+fiosR = metros/50;
+fiosA = metros % 50;
+	// resultado
+escreval("A quantia de fiosR é: ", fiosR, ".");
+escreval("A quantia de fiosA é: ", fiosA, ".");
+fimPrincipal

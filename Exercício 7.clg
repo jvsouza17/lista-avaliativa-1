@@ -1,0 +1,37 @@
+algoritmo dadosDoFuncionario;
+// Síntese
+//  Objetivo:  Escreva um programa que leia o nome do funcionário, o sexo (F ou M), o número de
+// matrícula do funcionário, o número de horas trabalhadas, o valor que recebe por hora
+// e calcule o salário desse funcionário. A seguir, mostre todos os dados na tela, os dados
+// de entrada e os dados de saída.
+//  Entrada : nome, sexo, n° matrícula, n° horas trabalhadas, valor que recebe por hora
+//  Saída   : salário e dados
+
+
+principal
+	// Declarações
+texto nome, sexo
+inteiro nMatricula, nHoras
+real vHora, salario
+	// Instruções
+	// coleta de dados
+escreval("Seu nome: ");
+leia(nome);
+escreval("F para feminino e M para masculino: ");
+leia(sexo);
+escreval("Número da matrícula: ");
+leia(nMatricula);
+escreval("Quantas horas trabalhadas? ");
+leia(nHoras);
+escreval("Quanto você ganha por hora? ");
+leia(vHora);
+	// salário
+salario = nHoras * vHora;
+	// dados
+escreval("Nome: ", nome);
+escreval("Sexo: ", sexo);
+escreval("Número da Matrícula: ", nMatricula);
+escreval("Horas trabalhadas: ", nHoras);
+escreval("Valor ganho por hora: R$", vHora);
+escreval("Salário: R$", salario);
+fimPrincipal

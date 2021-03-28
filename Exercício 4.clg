@@ -1,0 +1,23 @@
+algoritmo restoEQuociente;
+// Síntese
+//  Objetivo:  Construa um algoritmo que a partir da leitura de dois números forneça o resto e o
+// quociente da divisão do primeiro pelo segundo número.
+//  Entrada : ler 2 números 
+//  Saída   : fornecer o resto e o resultado da divisão do primeiro pelo segundo 
+
+
+principal
+	// Declarações
+real A, B, valorResto, valorQuociente;
+	// Instruções
+escreva("Valor de A");
+leia(A);
+escreva("Valor de B");
+leia(B);
+	// cálculo
+valorResto = A % B; // ou "mod"
+valorQuociente = A \ B;
+	// resultado
+escreval("O resto vale ", valorResto);
+escreval("O quociente da divisão vale ", valorQuociente);
+fimPrincipal
